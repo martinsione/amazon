@@ -5,6 +5,7 @@ import { useStateValue } from "../../context/StateProvider";
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
+  const userName = user.email.substring(0, user.email.lastIndexOf("@"));
 
   return (
     <div className="checkout">
@@ -16,7 +17,7 @@ function Checkout() {
         />
 
         <div>
-          {user && <h4>Have a happy day, {user?.email}</h4>}
+          {user && <h4>Have a happy day, {userName}</h4>}
           <h2 className="checkout__title">Your shopping Basket</h2>
           {basket.map((item) => (
             <CheckoutItem

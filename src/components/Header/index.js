@@ -9,6 +9,8 @@ import { auth } from "../../lib/firebase";
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
 
+  const userName = user.email.substring(0, user.email.lastIndexOf("@"));
+
   const handleAuth = () => {
     if (user) {
       auth.signOut();
@@ -37,7 +39,7 @@ function Header() {
         <Link to={!user && "/login"}>
           <div onClick={handleAuth} className="header__option">
             <span className="header__optionLineOne">
-              Hello, {user ? user?.email : "Guest"}
+              Hello, {user ? userName : "Guest"}
             </span>
             <span className="header__optionLineTwo">
               {user ? "Sign Out" : "Sign In"}
