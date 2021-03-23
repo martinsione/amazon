@@ -1,0 +1,12 @@
+.button {
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 2px;
+  border: 1px solid;
+  color: #111;
+  margin-top: 10px;
+  padding: 5px;
+  /* Args */
+  /* height: 30px; */
+  /* width: 100%; */
+}
