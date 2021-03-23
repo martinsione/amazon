@@ -1,13 +1,32 @@
 import "./index.css";
 
-function Button({ children, disabled, height, onClick, width }) {
+function Button({
+  bg,
+  children,
+  color,
+  disabled,
+  fontSize,
+  height,
+  onClick,
+  type,
+  padding,
+  width,
+}) {
   return (
     <>
       <button
         className="button"
         disabled={disabled}
         onClick={onClick}
-        style={{ height: `${height}`, width: `${width}` }}
+        type={type}
+        style={{
+          backgroundColor: `${bg}`,
+          color: `${color}`,
+          fontSize: `${fontSize}`,
+          height: `${height}`,
+          padding: `${padding}`,
+          width: `${width}`,
+        }}
       >
         {children}
       </button>
