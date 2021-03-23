@@ -1,4 +1,5 @@
 import "./index.css";
+import Button from "../Button";
 import { useStateValue } from "../../context/StateProvider.js";
 
 function Product({ id, image, price, rating, title }) {
@@ -37,7 +38,7 @@ function Product({ id, image, price, rating, title }) {
       </div>
 
       <img alt={title} src={image} />
-      <button onClick={addToBasket}>Add to Basket</button>
+      <Button onClick={addToBasket}>Add to Basket</Button>
     </div>
   );
 }

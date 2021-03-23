@@ -12,19 +12,15 @@
   z-index: 1;
 }
 
+.product__rating {
+  display: flex;
+}
+
 .product > img {
   margin-bottom: 15px;
   max-height: 200px;
   object-fit: contain;
   width: 100%;
-}
-
-.product > button {
-  background: #f0c14b;
-  border-color: #a88734 #9c7e31 #846a29;
-  border: 1px solid;
-  color: #111;
-  margin-top: 10px;
 }
 
 .product__info {
@@ -34,8 +30,4 @@
 
 .product__price {
   margin-top: 5px;
-}
-
-.product__rating {
-  display: flex;
 }
