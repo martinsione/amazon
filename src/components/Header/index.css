@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .header {
   align-items: center;
   background-color: #131921;
@@ -24,13 +28,20 @@
 
 .header__searchInput {
   height: 12px;
-  padding: 10px;
+  padding: 16px;
   border: none;
   width: 100%;
 }
 
-.header__searchIcon {
+.header__searchIconWrapper {
+  display: flex;
+  align-self: center;
   padding: 5px;
+  background-color: #cd9042;
+}
+
+.header__searchIcon {
+  padding: 2px;
   height: 22px !important;
   background-color: #cd9042;
 }

@@ -21,7 +21,9 @@ function Header() {
 
       <div className="header__search">
         <input className="header__searchInput" type="text" />
-        <SearchIcon className="header__searchIcon" />
+        <span className="header__searchIconWrapper">
+          <SearchIcon className="header__searchIcon" />
+        </span>
       </div>
 
       <div className="header__nav">
