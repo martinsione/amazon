@@ -5,7 +5,7 @@ import { useStateValue } from "../../context/StateProvider";
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
-  const userName = user.email.substring(0, user.email.lastIndexOf("@"));
+  const userName = user?.email.substring(0, user?.email.lastIndexOf("@"));
 
   return (
     <div className="checkout">

@@ -9,7 +9,7 @@ import { auth } from "../../lib/firebase";
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
 
-  const userName = user.email.substring(0, user.email.lastIndexOf("@"));
+  const userName = user?.email.substring(0, user?.email.lastIndexOf("@"));
 
   const handleAuth = () => {
     if (user) {
