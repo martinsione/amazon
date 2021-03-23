@@ -7,28 +7,29 @@
 }
 
 .login__logo {
-  margin: 20px auto;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   object-fit: contain;
-  width: 100px;
+  width: 120px;
 }
 
 .login__container {
-  border-radius: 5px;
+  border-radius: 0.3rem;
   border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding: 20px;
-  width: 400px;
+  padding: 2rem;
+  width: 350px;
 }
 
 .login__container > h1 {
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 1.4rem;
 }
 
 .login__container > form > h5 {
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
 .login__container > form > input {
@@ -42,4 +43,12 @@
 .login__container > p {
   font-size: 12px;
   margin-top: 15px;
+}
+
+input {
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  font-size: 1.2rem;
+  outline: 0;
+  padding: 1.2rem 0.5rem !important;
 }

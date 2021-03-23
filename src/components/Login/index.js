@@ -41,9 +41,9 @@ function Login() {
       </Link>
 
       <div className="login__container">
-        <h1>Sign-in</h1>
+        <h1>Sign-In</h1>
         <form>
-          <h5>E-mail</h5>
+          <h5>Email</h5>
           <input
             type="text"
             value={email}
@@ -72,7 +72,7 @@ function Login() {
         </p>
         <Button
           bg="#eee"
-          color="#111"
+          color="#222"
           padding="8px"
           width="100%"
           onClick={handleRegister}
