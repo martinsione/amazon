@@ -34,8 +34,13 @@
 
 .login__container > form > input {
   background-color: white;
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  font-size: 1.2rem;
   height: 30px;
   margin-bottom: 10px;
+  outline: 0;
+  padding: 1.2rem 0.5rem !important;
   padding: 10px;
   width: 98%;
 }
@@ -43,12 +48,4 @@
 .login__container > p {
   font-size: 12px;
   margin-top: 15px;
-}
-
-input {
-  border-radius: 2px;
-  border: 1px solid #bbb;
-  font-size: 1.2rem;
-  outline: 0;
-  padding: 1.2rem 0.5rem !important;
 }

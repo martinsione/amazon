@@ -3,9 +3,19 @@ import "./index.css";
 import Button from "../Button";
 import { useStateValue } from "../../context/StateProvider";
 import { getBasketTotal } from "../../context/reducer";
+import { useHistory } from "react-router-dom";
 
 function Subtotal() {
-  const [{ basket }, dispatch] = useStateValue();
+  const history = useHistory();
+  const [{ basket, user }, dispatch] = useStateValue();
+
+  const handlePayment = () => {
+    if (user) {
+      history.push("/payment");
+    } else {
+      history.push("/login");
+    }
+  };
 
   return (
     <div className="subtotal">
@@ -28,7 +38,11 @@ function Subtotal() {
         prefix={"$"}
       />
 
-      <Button>Proceed to checkout</Button>
+      {basket.length > 0 ? (
+        <Button onClick={handlePayment}>Proceed to checkout</Button>
+      ) : (
+        <Button disabled="disabled">Proceed to checkout</Button>
+      )}
     </div>
   );
 }

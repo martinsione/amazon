@@ -1,0 +1,33 @@
+.payment {
+  background-color: white;
+}
+
+.payment__section {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.payment__title {
+  flex: 0.2;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
+}
+
+.payment__details > input {
+  padding: 0.2rem;
+}
+
+.payment__details > label {
+  /* padding-bottom: 20px; */
+}
+
+.payment__info {
+  display: flex;
+  flex-direction: column;
+}
